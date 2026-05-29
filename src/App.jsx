@@ -7,7 +7,7 @@ import {
   useState,
 } from "react";
 import {
-  BrowserRouter,
+  HashRouter,
   Navigate,
   Route,
   Routes,
@@ -168,10 +168,10 @@ const AppRoutes = () => (
 
 const App = () => (
   <AuthProvider>
-    <BrowserRouter>
+    <HashRouter>
       <AppRoutes />
       <ToastContainer position="top-right" autoClose={2200} hideProgressBar />
-    </BrowserRouter>
+    </HashRouter>
   </AuthProvider>
 );
 
